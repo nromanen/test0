@@ -1,0 +1,82 @@
+Bash vs PowerShell – Порівняльна Шпаргалка
+
+
+📂 Поточна директорія
+Bash: pwd
+PowerShell: pwd або Get-Location
+
+📁 Список файлів
+Bash: ls
+PowerShell: ls або Get-ChildItem
+
+🔄 Перейти в папку
+Bash: cd ім'я
+PowerShell: cd ім'я
+
+🔄 Вгору на рівень
+Bash: cd ..
+PowerShell: cd ..
+
+📄 Створити файл
+Bash: touch file.txt
+PowerShell: New-Item file.txt -ItemType File
+
+📁 Створити папку
+Bash: mkdir dir
+PowerShell: New-Item dir -ItemType Directory
+
+📝 Запис у файл
+Bash: echo "text" > file.txt
+PowerShell: Set-Content file.txt "text"
+
+➕ Додати у файл
+Bash: echo "text" >> file.txt
+PowerShell: Add-Content file.txt "text"
+
+📖 Прочитати файл
+Bash: cat file.txt
+PowerShell: Get-Content file.txt
+
+❌ Видалити файл
+Bash: rm file.txt
+PowerShell: Remove-Item file.txt
+
+❌ Видалити папку
+Bash: rm -r dir
+PowerShell: Remove-Item dir -Recurse
+
+🧪 Перевірити існування
+Bash: [ -f file ]
+PowerShell: Test-Path file
+
+🧾 Змінні
+Bash: name="Rus"
+PowerShell: $name = "Rus"
+
+📥 Ввід користувача
+Bash: read var
+PowerShell: $var = Read-Host "?"
+
+🔁 Цикл for
+Bash: for i in {1..5}; do ...; done
+PowerShell: for ($i=1; $i -le 5; $i++) {...}
+
+🔁 foreach
+Bash: for i in list; do ...; done
+PowerShell: foreach ($i in $list) {...}
+
+🔍 Умова if
+Bash: if [ $a -eq 5 ]; then ...; fi
+PowerShell: if ($a -eq 5) {...}
+
+🔀 Коментарі
+Bash: # коментар
+PowerShell: # коментар
+
+🚀 Запуск скрипта
+Bash: ./script.sh
+PowerShell: .\script.ps1
+
+🔐 Дозвіл на виконання
+Bash: chmod +x script.sh
+PowerShell: Set-ExecutionPolicy RemoteSigned
